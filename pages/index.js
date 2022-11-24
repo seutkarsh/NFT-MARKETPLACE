@@ -1,8 +1,16 @@
 import React from "react";
-import NavBar from "../components/NavBar/NavBar";
+
+//INTERNAL IMPORTS
+import Style from "../styles/index.module.css";
+import { HeroSection, Service } from "../components/componentIndex";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div className={Style.homepage}>
+      <HeroSection />
+      <Service />
+    </div>
+  );
 };
 
 export default Home;
