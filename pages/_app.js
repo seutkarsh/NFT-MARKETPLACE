@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+//INTERNAL IMPORTS
+import { NavBar } from "../components/componentIndex";
 
-export default MyApp
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <div>
+      <NavBar />
+      <Component {...pageProps} />
+    </div>
+  );
+};
+
+export default MyApp;
